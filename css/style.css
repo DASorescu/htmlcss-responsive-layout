@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*   GENERICS  */
+/* UTILS */
+.p-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.d-flex{
+    display: flex;
+}
+.min-h{
+    min-height: 100%;
+}
+
+/* HEADER */
+
+header{
+    background-color: aqua;
+    border: 2px dashed #222;
+    min-height: 10vh;
+    width: 100%;
+}
+.header-row{
+    min-height: 10vh;
+    justify-content: space-between;
+}
+.logo-col{
+
+    width: 30%;
+    background-color: blueviolet;
+}
+
+.nav-menu{
+    width: 40%;
+    background-color: blueviolet;
+}

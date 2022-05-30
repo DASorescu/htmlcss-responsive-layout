@@ -19,12 +19,19 @@
 .min-h{
     min-height: 100%;
 }
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.btn{
 
+}
 /* HEADER */
 
 header{
     background-color: aqua;
     border: 2px dashed #222;
+    
     min-height: 10vh;
     width: 100%;
 }
@@ -33,12 +40,68 @@ header{
     justify-content: space-between;
 }
 .logo-col{
-
+    
     width: 30%;
     background-color: blueviolet;
+
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.nav-menu{
-    width: 40%;
+.nav-bar{
+    width: 20%;
     background-color: blueviolet;
+
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu{
+    display: none;
+    justify-content: space-between;
+}
+.fa-solid .fa-bars{
+    display: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+
+
+/*******************
+VERSIONE TABLET
+*********************/
+
+@media screen and (min-width: 768px){
+    
+}
+
+
+/************************************
+VERSIONE DESKTOP
+*************************************/
+
+@media screen and (min-width: 992px ){
+    .fa-solid .fa-bars{
+        display: none;
+    }
+    .nav-menu{
+        display: flex;
+    }
+
+    .container{
+    max-width: 80%;
+}
+    
+}
+
+/************************************
+VERSIONE LARGE-DESKTOP
+*************************************/
+
+@media screen and (min-width: 1200px){
+
+    
 }

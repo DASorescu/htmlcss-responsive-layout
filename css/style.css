@@ -1,12 +1,34 @@
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+/******************** 
+VERSIONE MOBILE
+********************* */
 /*   GENERICS  */
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    
+    display: block;
+    background-color: #fff;
+    padding: 5px 10px;
+    color: #000;
+    border-radius: 10%;
+}
+
+
+
 /* UTILS */
+.brd{
+    border: 1px solid #000;
+}
 .p-fixed{
     position: fixed;
     top: 0;
@@ -23,8 +45,8 @@
     max-width: 100%;
     margin: 0 auto;
 }
-.btn{
-
+.w-70{
+    width: 70%;
 }
 /* HEADER */
 
@@ -34,6 +56,7 @@ header{
     
     min-height: 10vh;
     width: 100%;
+
 }
 .header-row{
     min-height: 10vh;
@@ -58,16 +81,47 @@ header{
 }
 .nav-menu{
     display: none;
+    align-items: center;
     justify-content: space-between;
 }
-.fa-solid .fa-bars{
-    display: none;
-}
+
 li{
+    padding: 5px 10px ;
     list-style-type: none;
 }
 
+/* MAIN */
 
+/* 1-ST SECTION */
+.app-description{
+    margin-top: 12vh;
+}
+.col{
+    flex-direction: column;
+    min-height: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.row{
+    min-height: fit-content;
+    padding: 10%;
+
+}
+.lg-card,.smll-card{
+    border-radius: 10%;
+    padding: 10%;
+    margin-bottom: 10%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 400px;
+    width: 100%;
+
+    background-color: peru;
+
+
+}
 
 
 /*******************
@@ -75,7 +129,17 @@ VERSIONE TABLET
 *********************/
 
 @media screen and (min-width: 768px){
-    
+    .col{
+        flex-direction: row;
+       
+    }
+    .smll-card{
+        width: 30%;
+    }
+    .lg-card{
+        width: 65%;
+        
+    }
 }
 
 
@@ -84,17 +148,33 @@ VERSIONE DESKTOP
 *************************************/
 
 @media screen and (min-width: 992px ){
-    .fa-solid .fa-bars{
-        display: none;
+    body{
+        font-size: 10px;
     }
+    .nav-bar{
+        width: 40%;
+    }
+    .fa-solid.fa-bars{
+        display: none;
+    } 
     .nav-menu{
         display: flex;
     }
 
     .container{
-    max-width: 80%;
+    max-width: 90%;
 }
+.col{
+    flex-direction: row;
+   
+}
+.smll-card{
+    width: 30%;
+}
+.lg-card{
+    width: 65%;
     
+}
 }
 
 /************************************
@@ -102,6 +182,21 @@ VERSIONE LARGE-DESKTOP
 *************************************/
 
 @media screen and (min-width: 1200px){
+    body{
+        font-size: 20px;
+    }
+    .nav-bar{
+        width: 40%;
+    }
+    .fa-solid.fa-bars{
+        display: none;
+    } 
+    .nav-menu{
+        display: flex;
+    }
 
+    .container{
+    max-width: 80%;
+}
     
 }

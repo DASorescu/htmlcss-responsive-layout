@@ -99,6 +99,10 @@ li{
 .app-description{
     margin-top: 12vh;
 }
+.lg-col{
+    width: 100%;
+    min-height: fit-content;
+}
 .col{
     width: 100%;
     min-height: fit-content;
@@ -131,6 +135,14 @@ li{
 
 }
 
+/* SECOND SECTION */
+.col-50{
+    width: 100%;
+    min-height: fit-content;
+    
+}
+
+
 
 /*******************
 VERSIONE TABLET
@@ -142,13 +154,19 @@ VERSIONE TABLET
        
     }
     .col{
-        width: calc(100% / 3);
+        width: calc(100% / 3 - 10px);
     }
     .smll-card{
     }
     .lg-col{
         width: 65%;
         
+    }
+    .testimonials .row{
+        flex-direction: column;
+    }
+    section.testimonials .col{
+        width: 100%;
     }
 }
 
@@ -173,18 +191,21 @@ VERSIONE DESKTOP
 
     .container{
     max-width: 90%;
-}
-.col{
+    }
+        .col{
     flex-direction: row;
    
-}
-.smll-card{
-    width: 30%;
-}
-.lg-card{
-    width: 65%;
-    
-}
+    }
+    .smll-card{
+        width: 30%;
+    }
+    .lg-card{
+        width: 65%;
+        
+    }
+    .col-50{
+        max-width: 50%;
+    }
 }
 
 /************************************

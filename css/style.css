@@ -48,11 +48,14 @@ a{
 .w-70{
     width: 70%;
 }
+
+.bg-purple{
+    background-color: #9792E4;
+}
 /* HEADER */
 
 header{
     background-color: aqua;
-    border: 2px dashed #222;
     
     min-height: 10vh;
     width: 100%;
@@ -97,17 +100,22 @@ li{
     margin-top: 12vh;
 }
 .col{
-    flex-direction: column;
+    width: 100%;
     min-height: fit-content;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    
 }
 .row{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
     min-height: fit-content;
+
     padding: 10%;
 
+
 }
-.lg-card,.smll-card{
+.card{
     border-radius: 10%;
     padding: 10%;
     margin-bottom: 10%;
@@ -129,14 +137,16 @@ VERSIONE TABLET
 *********************/
 
 @media screen and (min-width: 768px){
-    .col{
+    .row{
         flex-direction: row;
        
     }
-    .smll-card{
-        width: 30%;
+    .col{
+        width: calc(100% / 3);
     }
-    .lg-card{
+    .smll-card{
+    }
+    .lg-col{
         width: 65%;
         
     }

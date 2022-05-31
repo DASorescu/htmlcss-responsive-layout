@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
 
+    --primary-color:#9792E4
+}
 /******************** 
 VERSIONE MOBILE
 ********************* */
@@ -18,46 +21,50 @@ a{
     
     display: block;
     background-color: #fff;
-    padding: 5px 10px;
+    padding: 1rem 2rem;
     color: #000;
-    border-radius: 10%;
+    border-radius: 2rem;
 }
 
 
 
 /* UTILS */
-.brd{
-    border: 1px solid #000;
-}
-.p-fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-}
+
 
 .d-flex{
     display: flex;
 }
+
 .min-h{
     min-height: 100%;
 }
+
 .container{
-    max-width: 100%;
+    max-width: 460px;
     margin: 0 auto;
 }
+
 .w-70{
     width: 70%;
 }
 
-.bg-purple{
+
+.bg-primary{
     background-color: #9792E4;
 }
+
+
+
 /* HEADER */
 
 header{
     background-color: aqua;
     
     min-height: 10vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
 
 }
@@ -67,7 +74,7 @@ header{
 }
 .logo-col{
     
-    width: 30%;
+    
     background-color: blueviolet;
 
     justify-content: center;
@@ -76,7 +83,7 @@ header{
 }
 
 .nav-bar{
-    width: 20%;
+    
     background-color: blueviolet;
 
     justify-content: center;
@@ -89,13 +96,13 @@ header{
 }
 
 li{
-    padding: 5px 10px ;
+    padding: 0 1rem ;
     list-style-type: none;
 }
 
 /* MAIN */
 
-/* 1-ST SECTION */
+/* app-description*/
 .app-description{
     margin-top: 12vh;
 }
@@ -135,39 +142,72 @@ li{
 
 }
 
-/* SECOND SECTION */
+/* Strategic planning */
 .col-50{
     width: 100%;
     min-height: fit-content;
     
 }
 
+/* testimonials */
+#testimonials .card {
+    background-color: #9792E4;
+}
+/* working with us */
+#working-with-us .card {
+    background-color: #fff;
+}
+#about-us{
+    /* todo:remove */
+    height: 400px;
+}
 
+/* get-started */
+#get-started{
+    /* todo:remove */
+    height: 400px;
+}
+
+/* footer */
+footer{
+    /* #todo:REMOVE */
+    height: 400px;
+    background-color: #333;
+}
 
 /*******************
 VERSIONE TABLET
 *********************/
 
 @media screen and (min-width: 768px){
+    
+    /* general */
+    .container{
+        max-width: 758px;
+    }
     .row{
         flex-direction: row;
        
     }
     .col{
-        width: calc(100% / 3 - 10px);
-    }
-    .smll-card{
+        width: calc(100% / 3 - 1rem);
     }
     .lg-col{
-        width: 65%;
+        width: calc(100% / 3 * 2 - 1rem);
         
     }
-    .testimonials .row{
+    /* testimonials */
+    #testimonials .row{
         flex-direction: column;
     }
-    section.testimonials .col{
+    #testimonials .col{
         width: 100%;
     }
+/* working-with-us */
+    #working-with-us .col{
+        width: calc(100% / 2 - 1rem);
+    }
+
 }
 
 
@@ -176,35 +216,43 @@ VERSIONE DESKTOP
 *************************************/
 
 @media screen and (min-width: 992px ){
+    
+    /* general */
+    .container{
+        max-width: 972px;
+    }
     body{
         font-size: 10px;
     }
-    .nav-bar{
-        width: 40%;
+    col{
+        flex-direction: row;
+       
     }
+    .smll-card{
+            width: 30%;
+    }
+    .lg-card{
+            width: 65%;
+            
+    }
+    /* utils */
+    .desktop-d-flex{
+        display: flex;
+    }
+    .col-50{
+        max-width: 50%;
+    }
+    /* header */
+   
     .fa-solid.fa-bars{
         display: none;
     } 
     .nav-menu{
         display: flex;
     }
-
-    .container{
-    max-width: 90%;
-    }
-        .col{
-    flex-direction: row;
-   
-    }
-    .smll-card{
-        width: 30%;
-    }
-    .lg-card{
-        width: 65%;
-        
-    }
-    .col-50{
-        max-width: 50%;
+/* working-with-us */
+    #working-with-us .col{
+        width: calc(100% / 3 - 1rem);
     }
 }
 
@@ -213,12 +261,13 @@ VERSIONE LARGE-DESKTOP
 *************************************/
 
 @media screen and (min-width: 1200px){
+    .container{
+        max-width: 1180px;
+    }
     body{
         font-size: 20px;
     }
-    .nav-bar{
-        width: 40%;
-    }
+    
     .fa-solid.fa-bars{
         display: none;
     } 
@@ -226,8 +275,5 @@ VERSIONE LARGE-DESKTOP
         display: flex;
     }
 
-    .container{
-    max-width: 80%;
-}
-    
+   
 }

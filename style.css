@@ -1,0 +1,279 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+
+    --primary-color:#9792E4
+}
+/******************** 
+VERSIONE MOBILE
+********************* */
+/*   GENERICS  */
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    
+    display: block;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    color: #000;
+    border-radius: 2rem;
+}
+
+
+
+/* UTILS */
+
+
+.d-flex{
+    display: flex;
+}
+
+.min-h{
+    min-height: 100%;
+}
+
+.container{
+    max-width: 460px;
+    margin: 0 auto;
+}
+
+.w-70{
+    width: 70%;
+}
+
+
+.bg-primary{
+    background-color: #9792E4;
+}
+
+
+
+/* HEADER */
+
+header{
+    background-color: aqua;
+    
+    min-height: 10vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+}
+.header-row{
+    min-height: 10vh;
+    justify-content: space-between;
+}
+.logo-col{
+    
+    
+    background-color: blueviolet;
+
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.nav-bar{
+    
+    background-color: blueviolet;
+
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu{
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li{
+    padding: 0 1rem ;
+    list-style-type: none;
+}
+
+/* MAIN */
+
+/* app-description*/
+.app-description{
+    margin-top: 12vh;
+}
+.lg-col{
+    width: 100%;
+    min-height: fit-content;
+}
+.col{
+    width: 100%;
+    min-height: fit-content;
+    
+}
+.row{
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    min-height: fit-content;
+
+    padding: 10%;
+
+
+}
+.card{
+    border-radius: 10%;
+    padding: 10%;
+    margin-bottom: 10%;
+    
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 400px;
+    width: 100%;
+
+    background-color: peru;
+
+
+}
+
+/* Strategic planning */
+.col-50{
+    width: 100%;
+    min-height: fit-content;
+    
+}
+
+/* testimonials */
+#testimonials .card {
+    background-color: #9792E4;
+}
+/* working with us */
+#working-with-us .card {
+    background-color: #fff;
+}
+#about-us{
+    /* todo:remove */
+    height: 400px;
+}
+
+/* get-started */
+#get-started{
+    /* todo:remove */
+    height: 400px;
+}
+
+/* footer */
+footer{
+    /* #todo:REMOVE */
+    height: 400px;
+    background-color: #333;
+}
+
+/*******************
+VERSIONE TABLET
+*********************/
+
+@media screen and (min-width: 768px){
+    
+    /* general */
+    .container{
+        max-width: 758px;
+    }
+    .row{
+        flex-direction: row;
+       
+    }
+    .col{
+        width: calc(100% / 3 - 1rem);
+    }
+    .lg-col{
+        width: calc(100% / 3 * 2 - 1rem);
+        
+    }
+    /* testimonials */
+    #testimonials .row{
+        flex-direction: column;
+    }
+    #testimonials .col{
+        width: 100%;
+    }
+/* working-with-us */
+    #working-with-us .col{
+        width: calc(100% / 2 - 1rem);
+    }
+
+}
+
+
+/************************************
+VERSIONE DESKTOP
+*************************************/
+
+@media screen and (min-width: 992px ){
+    
+    /* general */
+    .container{
+        max-width: 972px;
+    }
+    body{
+        font-size: 10px;
+    }
+    col{
+        flex-direction: row;
+       
+    }
+    .smll-card{
+            width: 30%;
+    }
+    .lg-card{
+            width: 65%;
+            
+    }
+    /* utils */
+    .desktop-d-flex{
+        display: flex;
+    }
+    .col-50{
+        max-width: 50%;
+    }
+    /* header */
+   
+    .fa-solid.fa-bars{
+        display: none;
+    } 
+    .nav-menu{
+        display: flex;
+    }
+/* working-with-us */
+    #working-with-us .col{
+        width: calc(100% / 3 - 1rem);
+    }
+}
+
+/************************************
+VERSIONE LARGE-DESKTOP
+*************************************/
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1180px;
+    }
+    body{
+        font-size: 20px;
+    }
+    
+    .fa-solid.fa-bars{
+        display: none;
+    } 
+    .nav-menu{
+        display: flex;
+    }
+
+   
+}
